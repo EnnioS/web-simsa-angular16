@@ -1,0 +1,28 @@
+  
+<div [ngClass]="'carouse-services'">
+    <owl-carousel-o [options]="serviceOptions">
+          
+      <ng-container *ngFor="let slide of slidesStore">
+        <ng-template  carouselSlide [id]="slide.id">
+          <section [ngClass]="'hero-banner-home-section'">
+            
+            <div [ngClass]="'icon-services-container'">
+              <img [src]="slide.img" [alt]="slide.title" [title]="slide.title">
+            </div>
+            <div [ngClass]="['title-services-container','f-size-25','white-color']">
+              <span [ngClass]="'black-color'">
+                {{slide.title}}
+              </span>
+            </div>
+            <div>
+              <span [ngClass]="'black-color'">
+                {{slide.description}}
+              </span>
+            </div>
+            
+          </section>
+        </ng-template>
+      </ng-container>
+    
+    </owl-carousel-o>
+    </div>

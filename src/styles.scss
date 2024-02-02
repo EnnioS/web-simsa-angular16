@@ -1,0 +1,507 @@
+/* You can add global styles to this file, and also import other style files */
+@import 'ngx-owl-carousel-o/lib/styles/scss/owl.carousel';
+@import 'ngx-owl-carousel-o/lib/styles/scss/owl.theme.default';
+@import "~bootstrap/dist/css/bootstrap.css";
+
+@font-face {
+  font-family: 'agencyfb_bold';
+  src: url('assets/fonts/agencyfb_bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'agencyfb_reg';
+  src: url('assets/fonts/agencyfb_reg.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.agency-font-bold{
+  font-family: 'agencyfb_reg', sans-serif;
+  font-weight: 600;
+}
+
+.agency-font-reg{
+    font-family: 'agencyfb_reg', sans-serif;
+}
+
+h1, h2, span, p{
+  font-family: 'Myriad Pro', sans-serif;
+}
+
+//LINK
+a{
+    text-decoration: none;
+}
+
+//BODY
+body{
+    margin: 0;
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 80px;
+}
+
+@media (max-width:992px){
+
+    body{
+        padding-bottom: 150px;
+    }
+}
+
+@media (max-width:550px){
+    body{
+        padding-bottom: 240px;
+    }
+}
+
+//BACKGROUD COLOR
+.white-back{
+    background-color: #fff;
+}
+.dark-gray-back{
+    background-color: #30312f;
+}
+.gray-back{
+    background-color:#e3e3e3;
+}
+.black-back{
+    background-color: #1d1d1b;
+}
+.sky-back{
+    background-color: #0078c1;
+} 
+.blue-back{
+    background-color: #0100a7;
+}
+.yellow-back{
+    background-color: #f8d601;
+}
+//FONT COLOR
+.white-color{
+    color: #fff;
+}
+.gray-color{
+    color:#dcdcdc
+}
+.dark-gray-color{
+    color: #30312f;
+}
+.black-color{
+    color: #1d1d1b;
+}
+.sky-color{
+    color: #0078c1;
+} 
+.blue-color{
+    color: #0100a7;
+}
+
+
+//FONT SIZE
+.f-size-13{
+    font-size: 13px;
+}
+
+.f-size-15{
+    font-size: 15px;
+}
+
+.f-size-20{
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.f-size-25{
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.f-size-30{
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.f-size-38{
+    font-size: 38px;
+    font-weight: 800;
+}
+
+//FONT-STYLE
+
+.font-italic {
+    font-style: italic !important; 
+}
+
+//BUTTONS
+
+
+.btn-white-blue{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    padding: 0 8px;
+    border-radius: 8px;
+    height: 35px;
+    width: 115px;
+    border: unset;
+}
+
+.btn-white-blue:hover{
+    background-color: #000;
+}
+
+.btn-white-blue:hover span{
+    color: #fff !important;
+}
+
+.btn-white-blue:hover svg{
+    fill: #fff;
+}
+
+.btn-white-blue span{
+    color:#0100a7 !important;
+}
+
+.btn-white-blue svg{
+    width: 14px;
+    fill: #0100a7;
+    margin-left: 5px;
+}
+
+
+
+.btn-black-blue{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    padding: 0 8px;
+    height: 35px;
+    // width: 115px;
+    border: unset;
+}
+
+.btn-black-blue:hover:not([disabled]){
+    background-color: #0100a7;
+}
+
+.btn-black-blue span{
+    color:#fff !important;
+}
+
+.btn-black-blue svg{
+    width: 14px;
+    fill: #fff;
+    margin-left: 5px;
+}
+
+
+
+
+.btn-white-black{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    padding: 0 8px;
+    height: 35px;
+    // width: 115px;
+    border: unset;
+}
+
+.btn-white-black:hover{
+    background-color: #000;
+}
+
+.btn-white-black:hover span{
+    color: #fff !important;
+}
+
+.btn-white-black:hover svg{
+    fill: #fff;
+}
+
+.btn-white-black span{
+    color:#000 !important;
+}
+
+.btn-white-black svg{
+    width: 14px;
+    fill: #000;
+    margin-left: 5px;
+}
+
+.btn-yellow-white{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8d601;
+  padding: 0 8px;
+  height: 35px;
+  width: 115px;
+  border: unset;
+  border-radius: 30px 30px 30px 30px;
+}
+
+.btn-yellow-white:hover{
+  background-color: #fff;
+}
+
+.btn-yellow-white span{
+  color:#000 !important;
+}
+
+.btn-yellow-white:hover span{
+  color: #000 !important;
+}
+
+.btn-yellow-white:hover svg{
+  fill: #000;
+}
+
+.btn-yellow-white svg{
+  width: 14px;
+  fill: #000;
+  margin-left: 5px;
+}
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/// CAROUSEL////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+//CAROUSEL
+  .owl-carousel .owl-nav {
+    display: flex;
+    position: absolute;
+    top: auto;
+    bottom: 50%;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .owl-carousel .owl-nav .owl-prev{
+    display: flex;
+    margin-left:25px;
+  } 
+  
+  .owl-carousel .owl-nav .owl-next{
+    display: flex;
+    margin-right:25px;
+  }
+
+  .owl-carousel .owl-nav .owl-prev,
+  .owl-carousel .owl-nav .owl-next {
+    border-radius: 25px;
+    width: 45px;
+    height: 45px;
+    background: rgba(255, 255, 255, 0.3);
+  }
+
+  .owl-carousel .owl-nav .owl-prev:hover,
+  .owl-carousel .owl-nav .owl-next:hover {
+    
+      background: rgba(255, 255, 255, 0.8);
+  }
+
+  
+  .owl-theme .owl-dots {
+    position: absolute;
+    bottom: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .owl-theme .owl-dots .owl-dot:hover span {
+    background: #fff;
+  }
+
+  .owl-theme .owl-dots .owl-dot.active span{
+    background: #0100a7;
+  }
+
+  .owl-theme .owl-dots .owl-dot span {
+    background: #f8d601;
+    box-shadow: 2px 2px 5px 2px rgba($color: #000000, $alpha: 0.3);
+  }
+  
+
+
+  //SERVICES SECTION
+.hero-banner-service-section {
+  position: relative;
+  margin-bottom: 50px;
+}
+
+
+.hero-banner-service-section img{
+  width: 100%;
+}
+
+.text-hero-banner-service {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+.text-hero-banner-service-container{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.text-box-hero-banner-service{
+  // background-color: #00499a;
+  height: 100%;
+  // padding: 0 8px 0;
+  // display: flex;
+  // justify-content: flex-start;
+  // align-items: center;
+  // gap: 10px;
+  
+}
+
+.text-box-hero-banner-service-title{
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 8px 8px;
+  gap: 10px;
+  box-shadow: 2px 2px 5px 2px rgba($color: #000000, $alpha: 0.3);
+}
+
+.text-box-hero-banner-service img{
+  width: 35px;
+}
+
+.text-description-hero-banner-service{
+  width: 100%;
+  margin-top: 15px;
+}
+.image-hero-banner-service img{
+  max-height: 370px;
+}
+
+
+.what-is-container{
+  margin-bottom: 50px;
+}
+
+.what-is-title-container{
+  margin:25px 0 15px 0
+}
+
+.gray-container,.white-container {
+ 
+  padding: 50px 0;
+  width: 100%;
+}
+
+.info-service-container{
+  display: flex;
+  justify-content: center;
+  gap:30px;
+}
+
+.info-service-container img{
+  width:250px;
+}
+
+
+@media (max-width:992px){
+  .text-description-hero-banner-service{
+    width: 100%;
+    line-height: 1.2;
+  }
+
+  .text-description-hero-banner-service span{
+    font-size: 20px;
+  }
+}
+
+@media (max-width:768px){
+  .text-description-hero-banner-service span{
+    font-size: 16px !important;
+  }
+
+  .text-box-hero-banner-service span{
+    // width: min-content;
+  }
+
+  .image-hero-banner-service img{
+    max-height: 250px;
+  }
+
+  .info-service-container{
+    flex-direction: column;
+  }
+
+  .info-service-container div:first-child{
+    align-self: center;
+  }
+
+  .info-service-container img {
+    width: 100%;
+    max-width: 300px;
+}
+}
+
+@media (max-width:680px){
+  .text-hero-banner-service{
+    flex-direction: column;
+    margin: 20px 0;
+    justify-content: space-around;
+  }
+
+  .image-hero-banner-service img{
+    max-height: 170px;
+  }
+}
+
+@media (max-width:450px){
+  .text-hero-banner-service{
+    flex-direction: column;
+    margin: 20px 0;
+    justify-content: space-around;
+  }
+
+  .image-hero-banner-service img{
+    max-height: 150px;
+  }
+
+  .gray-container, .white-container {
+    overflow: hidden;
+  }
+
+  #line {
+    width: 100px;
+    height: 2px;
+  }
+
+
+}
+
+@media (max-width:350px){
+  .sub-title-line div:first-child span {
+    font-size: 20px;
+  }
+}
+
+
+

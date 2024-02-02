@@ -1,0 +1,3 @@
+User-Agent: *
+Disallow:
+Sitemap: https://gruposimsacn.com/assets/sitemap.xml

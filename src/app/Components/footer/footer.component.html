@@ -1,0 +1,39 @@
+
+<footer [ngClass]="'footer'">
+    <div [ngClass]="['container', 'footer-container']">
+        <div [ngClass]="'copyright-container'">
+            <!--<div> 
+                <a href="/">
+                    <img [src]="'assets/img/logo/logo.png'">
+                </a>
+            </div>-->
+            <div ngClass="footer-text">
+                <span>
+                    Copyright© {{anio.getFullYear()}}. Todos los derechos reservados.
+                </span>
+                <br>
+                <span>
+                    http://www.gruposimsacn.com
+                </span>
+                
+                <span>
+                    Desarrollo y diseño: <a href="https://www.facebook.com/enniosPortfolio/">Ennio Sáenz</a>
+                </span>
+            </div>
+        </div>
+        <!--<div [ngClass]="'social-web'">
+            
+            <div [ngClass]="'social-svgs'">
+                <a href="#">
+                    <img [src]="'assets/img/icons/face.svg'">
+                </a>
+                <a href="#">
+                    <img [src]="'assets/img/icons/insta.svg'">
+                </a>
+                <a href="#">
+                    <img [src]="'assets/img/icons/wapp.svg'">
+                </a> 
+            </div>
+        </div>-->
+    </div>
+</footer>

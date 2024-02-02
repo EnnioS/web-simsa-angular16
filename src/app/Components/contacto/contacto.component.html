@@ -1,0 +1,105 @@
+<section id="form-contacto" [ngClass]="['gray-back','form-contact-container']">
+    <div ngClass="container">
+        <h1 [ngClass]="['f-size-35','agency-font-bold', 'text-center']">CONTÁCTANOS</h1>
+        <div>
+            <form [ngClass]="'form-contact'" [formGroup]="FormData" (ngSubmit)="onSubmit(FormData.value)">
+            
+                
+                <div class="form-group">
+                    <label><span>Nombre</span></label>
+                    <input class="form-control" type="text" name="name" formControlName="first">
+                    <span [ngClass]="'error-validation'" *ngIf="first?.invalid && ( first?.dirty || first?.touched ) && first?.hasError">
+                        Primer nombre es requerido
+                    </span>
+                </div>
+                
+                <div class="form-group">
+                    <label><span>Apellido</span></label>
+                    <input class="form-control" type="text" name="last" formControlName="last">
+                </div>
+                
+            
+                <div class="form-group">
+                    <label><span>Pais</span></label>
+                    <input class="form-control" type="text" name="country" formControlName="country">
+                </div>
+                
+                
+                <div class="form-group">
+                    <label><span>Email</span></label>
+                    <input class="form-control" type="email" name="email" formControlName="email">
+                    <span [ngClass]="'error-validation'" *ngIf="email?.invalid && ( email?.dirty || email?.touched ) && email?.hasError">
+                        El Email es requerido
+                    </span>
+                </div>
+
+                <div class="form-group">
+                    <label><span>Número telefónico</span></label>
+                    <input class="form-control" type="tel" name="name" formControlName="phone">
+                </div>
+                
+            
+                <div class="form-group">
+                    <label><span>Asunto</span></label>
+                    <input class="form-control" type="text" name="subject" formControlName="subject">
+                    <span [ngClass]="'error-validation'" *ngIf="subject?.invalid && ( subject?.dirty || subject?.touched ) && subject?.hasError">
+                        El Asunto es requerido
+                     </span>
+                </div>
+            
+                <div class="form-group">
+                    <label><span>¿Como podemos ayudarle?</span></label>
+                    <textarea class="form-control" rows="10" cols="50" name="message" formControlName="message">
+                    </textarea>
+                    <span [ngClass]="'error-validation'" *ngIf="message?.invalid && ( message?.dirty || message?.touched ) && message?.hasError">
+                        El mensaje es requerido
+                     </span>
+                   
+                </div>
+            
+                <div [ngClass]="['btn-content']">
+                    <button [ngClass]="['yellow-back']" type="submit" [disabled]="!FormData.valid">
+                        <span [ngClass]="['black-color','agency-font-bold','text-submit']">ENVIAR</span>
+                    </button>
+                </div>
+                <alert></alert>
+            </form>
+        </div>
+    </div>
+</section>
+
+<section id="nestras-ubicaciones" [ngClass]="['yellow-back','ubicaciones']">
+    <div ngClass="container">
+        <div>
+            <h2 [ngClass]="['f-size-35','agency-font-bold', 'text-center']">NUESTRAS UBICACIONES</h2>
+        </div>
+        <div ngClass="ubicaciones-container">
+            <div ngClass="img-location-container">
+                <img [src]="'assets/img/services/WebSiteDesign2024-19.png'">
+            </div>
+            <div ngClass="ubicaciones-text">
+                <div>
+                    <span>
+                        Estamos ubicados en tres paises de Centro America, debidamente registrados y habalados por las instituciones de cada país.
+                    </span>
+                </div>
+                <div ngClass="text-paises-container">
+                    <span [ngClass]="['agency-font-reg', 'f-size-20']">
+                        Paises
+                    </span>
+                </div>
+                <div ngClass="flag-contactbtn">
+                    <div>
+                        <img [src]="'assets/img/location/WebSiteDesign2024-43.jpg'">
+                        <img [src]="'assets/img/location/WebSiteDesign2024-44.jpg'">
+                        <img [src]="'assets/img/location/WebSiteDesign2024-45.jpg'">
+                    </div>
+                    <div ngClass="btn-ubicacio-contact">
+                        <button [ngClass]="['agency-font-reg', 'f-size-20']">CONTACTANOS</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</section>

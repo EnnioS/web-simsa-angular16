@@ -1,0 +1,40 @@
+.servicio-constru{
+    padding: 30px 0 30px;
+}
+
+.construccion-container{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin: 50px 0 50px;
+}
+
+.construccion-container img{
+    width: 180px;
+}
+
+.item-services{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+
+.cuadro-blanco{
+    width: 8px;
+    height: 8px;
+    background-color: #FFF;
+}
+
+
+//SECCION IMAGEN
+
+.barra-amarilla{
+    height: 10px;
+}
+
+.image-top-services img{
+    width: 100%;
+}
